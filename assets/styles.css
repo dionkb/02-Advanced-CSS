@@ -37,6 +37,7 @@ h2 {
     width: 100px;
     justify-content: center;
     align-items: center;
+    border-radius: 0 50px 50px 0;
 }
 
 nav {
@@ -64,6 +65,55 @@ nav ul li {
 
 main {
 
+}
+
+.card-container {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        'card1 card1 card1'
+        'card1 card1 card1'
+        'card2 card3 card4';
+    min-height: 1000px;
+
+}
+
+.card-container * {
+    background-color: #E8D5C4;
+    justify-content: center;
+}
+
+#card1 {
+    grid-area: card1;
+    display: flex;
+    align-items: center;
+    
+}
+
+#card2 {
+    display: flex;
+    grid-area: card2;
+    align-items: center;
+}
+
+#card3 {
+    display: flex;
+    grid-area: card3;
+    align-items: center;
+}
+
+#card4 {
+    display: flex;
+    grid-area: card4;
+    align-items: center;
+}
+
+.card-container div {
+}
+
+.card-container img {
+    width: 200px;
+    height: 200px;
 }
 
 footer {

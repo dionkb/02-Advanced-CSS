@@ -13,14 +13,15 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: space-between;
+    height: 150px
 }
 
 /* ----------------------------------- HEADER INFO --------------------------- */
 
 .header-info {
-    margin: -50px 0 0 5px;
-    width: 50%;
-    justify-content: center;
+    margin: -50px 20px 0 0;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -41,7 +42,8 @@ h3 {
 
 #avatar-img {
     display: relative;
-    width: 100px;
+    width: 120px;
+    height: 150px;
     justify-content: center;
     align-items: center;
     border-radius: 0 0 50px 0;
@@ -50,20 +52,25 @@ h3 {
 /* ----------------------------------- NAV LINKS --------------------------- */
 
 nav {
-    display: flexbox;
-    width: 40%;
+    height: 150px;
 }
 
-nav ul {
+.navbar {
+    display: inline-flex;
+}
+
+.navbar ul {
     list-style: none;
-    position: relative;
-    align-items: center;
-    float: right;
+    margin-top: 0px;
+    padding: 10px;
 }
 
-nav ul li {
-    display: block;
+.navbar ul li {
     font-size: 26px;
+}
+
+a:link, a:visited, a:hover, a:active { 
+    text-decoration: none; 
 }
 
 /* -------------------------------------- MAIN --------------------------- */
@@ -78,7 +85,6 @@ main {
 #aboutme, #mywork, #contact {
     text-align: center;
     padding: 10px;
-    border: 1px dashed #BAD7E9;
 }
 
 .cards {
@@ -106,28 +112,91 @@ main {
 }
 
 .cards img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 25px;
 }
 
-a:link { text-decoration: none; }
+.cards #card1 img {
+    width: 300px;
+    height: 300px;
+}
 
+.cards img:hover {
+    box-shadow: 5px 5px 5px #BAD7E9, -5px -5px 5px #BAD7E9;
+}
 
-a:visited { text-decoration: none; }
-
-
-a:hover { text-decoration: none; }
-
-
-a:active { text-decoration: none; }
+/* --------------------- FOOTER SECTION --------------------- */
 
 footer {
     font-size: 16px;
     text-align: center;
 }
 
-/* Add page resizing responsiveness */
-@media screen {
+/* ----------------------- PAGE SIZE RESPONSIVENESS -------------------- */
 
+@media screen and (max-width: 700px) {
+    .cards {
+        display: grid;
+        gap: 30px;
+        grid-template-areas:
+            'c1 c2'
+            'c3 c4';
+    }
+    
+    #card1 {
+        grid-area: c1;
+    }
+    
+    #card2 {
+        grid-area: c2;
+    }
+    
+    #card3 {
+        grid-area: c3;
+    }
+    
+    #card4 {
+        grid-area: c4;
+    }
+    
+    .cards img, .cards #card1 img {
+        width: 150px;
+        height: 150px;
+        border-radius: 25px;
+    }
+  }
+
+@media screen and (max-width: 450px) {
+    .cards {
+        display: grid;
+        gap: 30px;
+        grid-template-areas:
+            'c1'
+            'c2'
+            'c3'
+            'c4';
+    }
+    
+    #card1 {
+        grid-area: c1;
+    }
+    
+    #card2 {
+        grid-area: c2;
+    }
+    
+    #card3 {
+        grid-area: c3;
+    }
+    
+    #card4 {
+        grid-area: c4;
+    }
+    
+    .cards img, .cards #card1 img {
+        width: 150px;
+        height: 150px;
+        border-radius: 25px;
+    }
   }

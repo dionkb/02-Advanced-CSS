@@ -1,35 +1,42 @@
 * {
-    background-color: #FFF1DC;
+    background-color: #2B3467;
+    color: #BAD7E9;
 }
 
 body {
-
+    width: 100vw;
+    margin: 0;
 }
 
 header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
 }
 
+/* ----------------------------------- HEADER INFO --------------------------- */
+
 .header-info {
-    margin: -10px 0 0 10px;
-    width: 35%;
+    margin: -50px 0 0 5px;
+    width: 50%;
     justify-content: center;
     align-items: center;
 }
 
 h1 {
-    margin-bottom: -25px;
+    margin-bottom: -40px;
+    font-size: 64px;
 }
 
 h2 {
-
+    margin-left: 65px;
+    font-size: 26px;
 }
 
-.avatar {
-    display: flexbox;
-    width: 10%;
+h3 {
+    font-size: 44px;
+    margin: 0;
 }
 
 #avatar-img {
@@ -37,87 +44,87 @@ h2 {
     width: 100px;
     justify-content: center;
     align-items: center;
-    border-radius: 0 50px 50px 0;
+    border-radius: 0 0 50px 0;
 }
+
+/* ----------------------------------- NAV LINKS --------------------------- */
 
 nav {
     display: flexbox;
-    width: 55%;
-
+    width: 40%;
 }
 
 nav ul {
     list-style: none;
     position: relative;
-    margin: 30px;
+    align-items: center;
     float: right;
 }
 
 nav ul li {
-    display: inline;
-    margin: 5px;
-    font-size: larger;
+    display: block;
+    font-size: 26px;
 }
 
-#background-img {
-
-}
+/* -------------------------------------- MAIN --------------------------- */
 
 main {
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.card-container {
+#aboutme, #mywork, #contact {
+    text-align: center;
+    padding: 10px;
+    border: 1px dashed #BAD7E9;
+}
+
+.cards {
     display: grid;
-    gap: 5px;
+    gap: 30px;
     grid-template-areas:
-        'card1 card1 card1'
-        'card1 card1 card1'
-        'card2 card3 card4';
-    min-height: 1000px;
-
-}
-
-.card-container * {
-    background-color: #E8D5C4;
-    justify-content: center;
+        'c1 c1 c1'
+        'c2 c3 c4';
 }
 
 #card1 {
-    grid-area: card1;
-    display: flex;
-    align-items: center;
-    
+    grid-area: c1;
 }
 
 #card2 {
-    display: flex;
-    grid-area: card2;
-    align-items: center;
+    grid-area: c2;
 }
 
 #card3 {
-    display: flex;
-    grid-area: card3;
-    align-items: center;
+    grid-area: c3;
 }
 
 #card4 {
-    display: flex;
-    grid-area: card4;
-    align-items: center;
+    grid-area: c4;
 }
 
-.card-container div {
+.cards img {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
 }
 
-.card-container img {
-    width: 200px;
-    height: 200px;
-}
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
 
 footer {
-
+    font-size: 16px;
+    text-align: center;
 }
 
 /* Add page resizing responsiveness */

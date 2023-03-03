@@ -1,5 +1,5 @@
 * {
-
+    background-color: #FFF1DC;
 }
 
 body {
@@ -7,18 +7,58 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.header-info {
+    margin: -10px 0 0 10px;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: -25px;
+}
+
+h2 {
 
 }
 
+.avatar {
+    display: flexbox;
+    width: 10%;
+}
+
+#avatar-img {
+    display: relative;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
 nav {
+    display: flexbox;
+    width: 55%;
 
 }
 
 nav ul {
-
+    list-style: none;
+    position: relative;
+    margin: 30px;
+    float: right;
 }
 
 nav ul li {
+    display: inline;
+    margin: 5px;
+    font-size: larger;
+}
+
+#background-img {
 
 }
 
@@ -30,3 +70,7 @@ footer {
 
 }
 
+/* Add page resizing responsiveness */
+@media screen {
+
+  }

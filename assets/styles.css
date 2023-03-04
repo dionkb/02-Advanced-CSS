@@ -1,6 +1,6 @@
 * {
-    background-color: #2B3467;
-    color: #BAD7E9;
+    background-color: #fff;
+    color: #000;
 }
 
 body {
@@ -8,25 +8,34 @@ body {
     margin: 0;
 }
 
+/* ----------------------------------- HEADER INFO --------------------------- */
+
 header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
-    height: 150px
+    height: 150px;
+    padding: 20px;
+    background-color: #BAD7E9;
 }
 
-/* ----------------------------------- HEADER INFO --------------------------- */
+header * {
+    background-color:#BAD7E9;
+}
 
 .header-info {
-    margin: -50px 20px 0 0;
-    justify-content: space-around;
+    margin: -50px 60px 0 0;
     align-items: center;
 }
 
+.short {
+    display: none;
+}
+
 h1 {
-    margin-bottom: -40px;
+    margin-bottom: -30px;
     font-size: 64px;
 }
 
@@ -136,6 +145,24 @@ footer {
 /* ----------------------- PAGE SIZE RESPONSIVENESS -------------------- */
 
 @media screen and (max-width: 700px) {
+    .header-info {
+        margin: -5px 0 0 0;
+        align-items: center;
+    }
+    .full {
+        display: none;
+    }
+    .short {
+        display: inline-block;
+    }
+    h1 {
+        margin: 5px -30px -25px -150px;
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 24px;
+        margin-left: -150px;
+    }
     .cards {
         display: grid;
         gap: 30px;
@@ -168,6 +195,19 @@ footer {
   }
 
 @media screen and (max-width: 450px) {
+    .navbar {
+        display: inline;
+    }
+    
+    .navbar ul {
+        list-style: none;
+        margin: -60px 0 0 200px;
+        padding: 10px;
+    }
+    
+    .navbar ul li {
+        font-size: 14px;
+    }
     .cards {
         display: grid;
         gap: 30px;
@@ -177,7 +217,6 @@ footer {
             'c3'
             'c4';
     }
-    
     #card1 {
         grid-area: c1;
     }

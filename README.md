@@ -1,17 +1,47 @@
 # Dion Baskara - Portfolio
 
+This project was completed in order to both learn and utilize the techniques I have been learning. This page will also someday function as a true web
+development portfolio as I begin to populate it with more deployed apps.
 
+## Description
 
+This webpage will function as my portfolio to showcase the work I have done as a web developer. It will highlight projects I have completed in order
+to show potential employers the skills that I have as a developer. It will act as a continually expanding repertoire that can follow me through my
+career as I learn more advanced skills.
 
+Screenshot of final output: ![Screenshot](https: *************************************
 
-acknowl.
+Link to the GitHub repository: https://github.com/dionkb/ ****************************
 
-[https://colorhunt.co/palette/3a98b9fff1dce8d5c4eeeeee](https://colorhunt.co/palette/2b3467bad7e9fcffe7eb455f)
+## Getting Started
 
-https://c4.wallpaperflare.com/wallpaper/542/50/545/simple-background-blue-simple-minimalism-wallpaper-preview.jpg
+### Dependencies
 
-https://images.unsplash.com/photo-1521080755838-d2311117f767?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Ymx1ZSUyMG1pbmltYWx8ZW58MHx8MHx8&w=1000&q=80
+* N/A
 
-https://www.w3schools.com/css/css3_transitions.asp
+### Installing
 
-https://www.w3schools.com/cssref/pr_background-image.php
+* N/A
+
+### Executing program
+
+Link to the deployed application:  
+https://dionkb.github.io/ *********************
+
+## Authors
+
+Dion Baskara  
+dionkbaskara@gmail.com
+
+## License
+
+See the LICENSE.md file for details
+
+## Acknowledgments
+
+For providing templates and insights into code:  
+*https://www.w3schools.com
+*https://www.freecodecamp.org  
+
+For providing a beautiful color pallete:
+*https://colorhunt.co/palette/3a98b9fff1dce8d5c4eeeeee

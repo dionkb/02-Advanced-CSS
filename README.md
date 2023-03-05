@@ -12,7 +12,7 @@ career as I learn more advanced skills.
 Screenshot of final output: ![Screenshot](https://github.com/dionkb/Dion-Baskara-Portfolio/blob/ff28a7ab3f97aa89ede6137c4378ba9692cacd17/assets/images/Screenshot.jpg)
 
 Link to the GitHub repository:  
-https://github.com/dionkb/ ****************************
+https://github.com/dionkb/Dion-Baskara-Portfolio.git
 
 ## Getting Started
 

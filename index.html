@@ -9,101 +9,95 @@
     <title>Dion Baskara - Web Development Portfolio</title>
 </head>
 
-<!-- MAIN BODY OF PAGE -->
-
 <body>
-    
-<!-- HEADER AND NAVBAR -->
 
-    <header>
-        <div class="navbar">
-            <img id="avatar-img" src="./assets/images/catSketch.jpg" alt="avatar representing Dion Baskara"/>
-            <nav>
-                <ul>
-                    <li><a href="#mywork">My Work</a></li>
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </nav>
+    <div class="container">
+        <div class="avatar">
+            <img src="./assets/images/catSketch.jpg" alt="avatar representing Dion Baskara"/>
         </div>
-        <div class="header-info">
-            <h1><span class="full">Dion Baskara</span><span class="short">Dion B.</span></h1>
-            <h2><span class="full">Web Development Portfolio</span><span class="short">Portfolio</span></h2>
-        </div>
-    </header>
+        <header>
+            <div class="header-info">
+                <h1>Dion Baskara</h1>
+                <h2>Web Development Portfolio</h2>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#mywork">My Work</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
 
-<!-- MAIN CONTENT SECTIONS -->
-
-    <main>
-
-<!-- MY WORK -->
-
-        <div id="mywork">
+        <main id="mywork">
             <h3>My Work</h3>
-            <p>Someday this will have great things, but for now, just pretend.</p>
-                <section class="cards">
+            <p>Someday this will have great things, but for now, just pretend it doesn't look like it was made in the early aughts.</p>
+            <section class="cards">
+                <div class="background-img-bigger">
                     <div id="card1">
                         <figure>
                             <a target="_blank" href="placeholderwebsite">
-                                <img src="./assets/images/catHunter.jpg">
+                                <img id="primary" src="./assets/images/catHunter.jpg" alt="sketch of a mouse who hunted a cat">
                             </a>
                         </figure>
-                        <figcaption>This will be where I link my most-prized work. I'm currently and prize-less, but just you wait!</figcaption>
+                        <figcaption>This large picture will be where I link my most-prized work. I'm currently and prize-less, but just you wait!</figcaption>
                     </div>
+                </div>
+                <div class="background-img">
                     <div id="card2">
                         <figure>
                             <a target="_blank" href="placeholderwebsite">
-                                <img src="./assets/images/love.jpg">
+                                <img id="secondary" src="./assets/images/love.jpg" alt="a sketch of two robots in love, sharing a dream">
                             </a>
                         </figure>
-                        <figcaption>This marks the stuff I think isn't as good, but I'll pretend to love all my children equally.</figcaption>
+                        <figcaption>The transition to smaller pictures marks the stuff I think isn't as good, but I'll pretend to love all my children equally.</figcaption>
                     </div>
+                </div>
+                <div class="background-img">
                     <div id="card3">
                         <figure>
                             <a target="_blank" href="placeholderwebsite">
-                                <img src="./assets/images/lionThing.jpg">
+                                <img id="secondary" src="./assets/images/lionThing.jpg" alt="a sketch of a lion whose mane is made of hundreds of random shapes">
                             </a>
                         </figure>
                         <figcaption>You asked for a third picture? You got it! You didn't ask for one? You still got it!</figcaption>
                     </div>
+                </div>
+                <div class="background-img">
                     <div id="card4">
                         <figure>
                             <a target="_blank" href="placeholderwebsite">
-                                <img src="./assets/images/ImagePlaceholder.png">
+                                <img id="secondary" src="./assets/images/ImagePlaceholder.png">
                             </a>
                         </figure>
                         <figcaption>Too lazy to add a fourth picture, but still chose to download and use a placeholder image? Isn't that more work? </figcaption>
                     </div>
-                </section>
-        </div>
+                </div>
+            </section>
+        </main>
 
 <!-- ABOUT ME -->
 
-        <div id="aboutme">
+        <section id="aboutme">
             <h3>About Me</h3>
             <p>
-                I occcasionally sketch things.
-                <br>
+                I occcasionally sketch things.<br>
                 I am just a tiny, teeny, baby coder but someday I will be big and strong.
             </p>
-        </div>
+        </section>
 
 <!-- CONTACT INFO -->
 
-        <div id="contact">
+        <section id="contact">
             <h3>Talk To Me</h3>
             <p>Email: REDACTED</p>
             <p>Phone: REDACTED</p>
-        </div>
-        </div>
-    </main>    
-    
-<!-- FOOTER OF PAGE -->
+        </section>
 
-    <footer>
-        This is the footer.
-    </footer>
-
+        <footer>
+            This is the footer.
+        </footer>
+    </div>
 </body>
 
 </html>

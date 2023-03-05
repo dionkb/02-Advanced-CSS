@@ -40,6 +40,13 @@ h3 { /* styling for 'Web Development Portfolio' section */
     margin: 5px;
 }
 
+h4 { /* styles footer section and demarcation line above it */
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid var(--tert-color);
+}
+
 nav ul { /* styling for section link list in navbar */
     list-style: none;
     padding: 0;
@@ -58,6 +65,10 @@ main { /* adds a section demarcation line between header and main */
     text-align: center;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--tert-color);
+}
+
+#contact p { /* styling for 'Contact Me' section */
+    margin: 0;
 }
 
 .container * { /* styles main body to flow in a column and adjust when needing to be responsive */
@@ -175,11 +186,6 @@ a:link { /* styles navbar links when static */
 
 a:hover, a:active { /* styles navbar links when interacted with */
     font-size: 55px;
-}
-
-footer { /* styles footer section and demarcation line above it */
-    padding: 20px;
-    border-top: 1px solid var(--tert-color);
 }
 
 

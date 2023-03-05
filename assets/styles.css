@@ -1,92 +1,90 @@
-* {
-    background-color: #fff;
-    color: #D5CEA3;
-    font-size: 22px;
-    text-align: center;
+:root { /*Sets variables to be used when possible*/
+    --pri-color: #fff;
+    --sec-color: #EEEEEE;
+    --tert-color: #E5E5CB;
+    --font-color: #D5CEA3;
 }
 
-body {
+* { /* Sets common properties among entire page elements */
+    background-color: var(--pri-color);
+    color: var(--font-color);
+    font-size: 22px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body { /* Adds a buffer around the entire page so everything displays on screen */
     margin: 20px;
 }
 
-.container .avatar {
-    border-bottom: 1px solid #E5E5CB;
-    padding-bottom: 20px;
-}
-
-header {
+header { /* styling for all items in header bar */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-bottom: 1px solid #E5E5CB;
 }
 
-h1 {
+h1 { /* styling for 'Dion Baskara' text in header */
     font-size: 80px;
     margin: 0;
 }
 
-h2 {
-    font-size: 24px;
-    margin: 0;
-}
-
-h3 {
+h2 { /* styling for 'My Work', 'About Me', and 'Contact Me' section headers */
     font-size: 64px;
     margin: 20px 0 0 0;
     text-align: center;
 }
 
-nav{
-    border-bottom: 1px solid #E5E5CB;
+h3 { /* styling for 'Web Development Portfolio' section */
+    font-size: 24px;
+    margin: 5px;
 }
 
-nav ul {
+nav ul { /* styling for section link list in navbar */
     list-style: none;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    text-align: right;
 }
 
-nav ul li a{
-    font-size: 44px;
-    /* margin: 40px 0 40px 150px; */
+nav ul li a{ /* styling for links in navbar */
+    font-size: 40px;
 }
 
-#aboutme {
+main { /* adds a section demarcation line between header and main */
+    border-top: 1px solid var(--tert-color);
+    margin-top: 20px;
+}
+
+#aboutme { /* styling for 'About Me' section and demarcation line below */
     text-align: center;
     padding-bottom: 10px;
-    border-bottom: 1px solid #E5E5CB;
+    border-bottom: 1px solid var(--tert-color);
 }
 
-.container * {
+.container * { /* styles main body to flow in a column and adjust when needing to be responsive */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.cards {
+.cards { /* styling for contents of 'My Work' section and bottom demarcation line */
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    border-bottom: 1px solid #E5E5CB;
+    border-bottom: 1px solid var(--tert-color);
 }
 
-.cards > div {
+.cards > div { /* creates a gap between each card for aesthetics */
     margin: 20px;
 }
 
-.cards div * {
+.cards div * { /* aesthetic styling to card images and text-blocks */
     background-color: transparent;
 }
 
-.background-img-bigger {
-    /* background-image: url("./images/Blue\ background\ image.jpg"); */
-    background-color: #EEEEEE;
+.background-img-bigger { /* styling for the background block around the first 'My Work' card */
+    background-color: var(--sec-color);
     height: fit-content;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,101 +94,99 @@ nav ul li a{
     border-radius: 20px;
 }
 
-.background-img {
-    /* background-image: url("./images/Blue\ background\ image.jpg"); */
-    background-color: #EEEEEE;
+.background-img { /* styling for the background block around the remaining 'My Work' cards */
+    background-color: var(--sec-color);
     height: fit-content;
     background-position: center;
     background-repeat: no-repeat;
-    width: 60vw;
+    width: 65vw;
     background-size: cover; 
     padding-bottom: 30px; 
     border-radius: 20px;
 }
 
-.container {
+.container { /* sets up the grid style and structure that the page is built on */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-auto-rows: auto-fit;
-    /* grid-gap: 10px; */
     grid-template-areas: 
         "avatar header nav"
         "mywork mywork mywork"
         "aboutme aboutme aboutme"
         ". contact ."
         ". footer .";
-    /* background-color: gray;   */
 }
 
-.container .avatar {
+.container .avatar { /* sets the location of the avatar in the grid area */
     grid-area: avatar;
 }
 
-.container header {
+.container header { /* sets the location of the 'Dion...' and 'Web Dev...' in the grid area */
     grid-area: header;
 }
 
-.container nav {
+.container nav { /* sets the location of the navbar in the grid area */
     grid-area: nav;
 }
 
-.container #mywork {
+.container #mywork { /* sets the location of the 'My Work' section in the grid area */
     grid-area: mywork;
 }
 
-.container #aboutme {
+.container #aboutme { /* sets the location of the 'About Me' section in the grid area */
     grid-area: aboutme;
 }
 
-.container #contact {
+.container #contact { /* sets the location of the 'Contact Me' section in the grid area */
     grid-area: contact;
 }
 
-.container footer {
+.container footer { /* sets the location of the footer in the grid area */
     grid-area: footer;
 }
 
-#primary {
-    width: 500px;
-    height: 700px;
+#primary { /* styles the first image in the 'My Work' section */
+    width: 425px;
+    height: auto;
     border-radius: 50%;
 }
 
-#secondary {
+#secondary { /* styles the remaining images in the 'My Work' section */
     max-width: 300px;
     max-height: 300px;
     border-radius: 50%;
 }
 
-.cards #primary:hover, .cards #secondary:hover {
-    box-shadow: 5px 5px 5px #E5E5CB, -5px -5px 5px #E5E5CB;
+.cards #primary:hover, .cards #secondary:hover { /* gives aesthetic styling to the cards when viewed */
+    box-shadow: 5px 5px 5px var(--tert-color), -5px -5px 5px var(--tert-color);
     border-radius: 10%;
     transition: border-radius 2s;
 }
 
-.avatar img {
+.avatar img { /* styles the avatar image directly */
     border-radius: 50px;
     max-width: 300px;
     max-height: 300px;
 }
 
-a:link { 
+a:link { /* styles navbar links when static */
     text-decoration: none; 
 }
 
-a:hover, a:active {
+a:hover, a:active { /* styles navbar links when interacted with */
     font-size: 55px;
 }
 
-footer {
+footer { /* styles footer section and demarcation line above it */
     padding: 20px;
-    border-top: 1px solid #E5E5CB;
+    border-top: 1px solid var(--tert-color);
 }
 
 
 /* ----------------------- RESPONSIVENESS ----------------------------------- */
 
-@media screen and (max-width: 880px) {
+
+@media screen and (max-width: 930px) { /* Enables layout and styling to respond to varying screen sizes below 930px width */
     * {
         text-align: center;
     }
@@ -208,7 +204,6 @@ footer {
             "aboutme"
             "contact"
             "footer";
-        /* background-color: gray;   */
     }
     
     .container .avatar {
@@ -238,11 +233,10 @@ footer {
     .container footer {
         grid-area: footer;
     }
-    
 
     #primary {
         width: 100%;
-        max-width: 500px;
+        max-width: 425px;
         height: auto;
         border-radius: 50%;
     }   
@@ -254,8 +248,7 @@ footer {
     }
 
     .background-img-bigger {
-        /* background-image: url("./images/Blue\ background\ image.jpg"); */
-        background-color: #EEEEEE;
+        background-color: var(--sec-color);
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -265,8 +258,7 @@ footer {
     }
     
     .background-img {
-        /* background-image: url("./images/Blue\ background\ image.jpg"); */
-        background-color: #EEEEEE;
+        background-color: var(--sec-color);
         height: fit-content;
         background-position: center;
         background-repeat: no-repeat;

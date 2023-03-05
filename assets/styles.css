@@ -1,241 +1,282 @@
 * {
     background-color: #fff;
-    color: #000;
+    color: #D5CEA3;
+    font-size: 22px;
+    text-align: center;
 }
 
 body {
-    width: 100vw;
-    margin: 0;
+    margin: 20px;
 }
 
-/* ----------------------------------- HEADER INFO --------------------------- */
+.container .avatar {
+    border-bottom: 1px solid #E5E5CB;
+    padding-bottom: 20px;
+}
 
 header {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100vw;
-    justify-content: space-between;
-    height: 150px;
-    padding: 20px;
-    background-color: #BAD7E9;
-}
-
-header * {
-    background-color:#BAD7E9;
-}
-
-.header-info {
-    margin: -50px 60px 0 0;
     align-items: center;
-}
-
-.short {
-    display: none;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #E5E5CB;
 }
 
 h1 {
-    margin-bottom: -30px;
-    font-size: 64px;
-}
-
-h2 {
-    margin-left: 65px;
-    font-size: 26px;
-}
-
-h3 {
-    font-size: 44px;
+    font-size: 80px;
     margin: 0;
 }
 
-#avatar-img {
-    display: relative;
-    width: 120px;
-    height: 150px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 0 50px 0;
+h2 {
+    font-size: 24px;
+    margin: 0;
 }
 
-/* ----------------------------------- NAV LINKS --------------------------- */
-
-nav {
-    height: 150px;
-}
-
-.navbar {
-    display: inline-flex;
-}
-
-.navbar ul {
-    list-style: none;
-    margin-top: 0px;
-    padding: 10px;
-}
-
-.navbar ul li {
-    font-size: 26px;
-}
-
-a:link, a:visited, a:hover, a:active { 
-    text-decoration: none; 
-}
-
-/* -------------------------------------- MAIN --------------------------- */
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#aboutme, #mywork, #contact {
+h3 {
+    font-size: 64px;
+    margin: 20px 0 0 0;
     text-align: center;
-    padding: 10px;
+}
+
+nav{
+    border-bottom: 1px solid #E5E5CB;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+}
+
+nav ul li a{
+    font-size: 44px;
+    /* margin: 40px 0 40px 150px; */
+}
+
+#aboutme {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E5E5CB;
+}
+
+.container * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    border-bottom: 1px solid #E5E5CB;
+}
+
+.cards > div {
+    margin: 20px;
+}
+
+.cards div * {
+    background-color: transparent;
+}
+
+.background-img-bigger {
+    /* background-image: url("./images/Blue\ background\ image.jpg"); */
+    background-color: #EEEEEE;
+    height: fit-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90vw;
+    background-size: cover;
+    padding: 10px; 
+    border-radius: 20px;
+}
+
+.background-img {
+    /* background-image: url("./images/Blue\ background\ image.jpg"); */
+    background-color: #EEEEEE;
+    height: fit-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60vw;
+    background-size: cover; 
+    padding-bottom: 30px; 
+    border-radius: 20px;
+}
+
+.container {
     display: grid;
-    gap: 30px;
-    grid-template-areas:
-        'c1 c1 c1'
-        'c2 c3 c4';
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: auto-fit;
+    /* grid-gap: 10px; */
+    grid-template-areas: 
+        "avatar header nav"
+        "mywork mywork mywork"
+        "aboutme aboutme aboutme"
+        ". contact ."
+        ". footer .";
+    /* background-color: gray;   */
 }
 
-#card1 {
-    grid-area: c1;
+.container .avatar {
+    grid-area: avatar;
 }
 
-#card2 {
-    grid-area: c2;
+.container header {
+    grid-area: header;
 }
 
-#card3 {
-    grid-area: c3;
+.container nav {
+    grid-area: nav;
 }
 
-#card4 {
-    grid-area: c4;
+.container #mywork {
+    grid-area: mywork;
 }
 
-.cards img {
-    width: 150px;
-    height: 150px;
-    border-radius: 25px;
+.container #aboutme {
+    grid-area: aboutme;
 }
 
-.cards #card1 img {
-    width: 300px;
-    height: 300px;
+.container #contact {
+    grid-area: contact;
 }
 
-.cards img:hover {
-    box-shadow: 5px 5px 5px #BAD7E9, -5px -5px 5px #BAD7E9;
+.container footer {
+    grid-area: footer;
 }
 
-/* --------------------- FOOTER SECTION --------------------- */
+#primary {
+    width: 500px;
+    height: 700px;
+    border-radius: 50%;
+}
+
+#secondary {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+}
+
+.cards #primary:hover, .cards #secondary:hover {
+    box-shadow: 5px 5px 5px #E5E5CB, -5px -5px 5px #E5E5CB;
+    border-radius: 10%;
+    transition: border-radius 2s;
+}
+
+.avatar img {
+    border-radius: 50px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+a:link { 
+    text-decoration: none; 
+}
+
+a:hover, a:active {
+    font-size: 55px;
+}
 
 footer {
-    font-size: 16px;
-    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #E5E5CB;
 }
 
-/* ----------------------- PAGE SIZE RESPONSIVENESS -------------------- */
 
-@media screen and (max-width: 700px) {
-    .header-info {
-        margin: -5px 0 0 0;
-        align-items: center;
-    }
-    .full {
-        display: none;
-    }
-    .short {
-        display: inline-block;
-    }
-    h1 {
-        margin: 5px -30px -25px -150px;
-        font-size: 36px;
-    }
-    h2 {
-        font-size: 24px;
-        margin-left: -150px;
-    }
-    .cards {
-        display: grid;
-        gap: 30px;
-        grid-template-areas:
-            'c1 c2'
-            'c3 c4';
-    }
-    
-    #card1 {
-        grid-area: c1;
-    }
-    
-    #card2 {
-        grid-area: c2;
-    }
-    
-    #card3 {
-        grid-area: c3;
-    }
-    
-    #card4 {
-        grid-area: c4;
-    }
-    
-    .cards img, .cards #card1 img {
-        width: 150px;
-        height: 150px;
-        border-radius: 25px;
-    }
-  }
+/* ----------------------- RESPONSIVENESS ----------------------------------- */
 
-@media screen and (max-width: 450px) {
-    .navbar {
-        display: inline;
+@media screen and (max-width: 880px) {
+    * {
+        text-align: center;
     }
-    
-    .navbar ul {
-        list-style: none;
-        margin: -60px 0 0 200px;
-        padding: 10px;
-    }
-    
-    .navbar ul li {
-        font-size: 14px;
-    }
-    .cards {
+
+    .container {
         display: grid;
-        gap: 30px;
-        grid-template-areas:
-            'c1'
-            'c2'
-            'c3'
-            'c4';
-    }
-    #card1 {
-        grid-area: c1;
-    }
-    
-    #card2 {
-        grid-area: c2;
-    }
-    
-    #card3 {
-        grid-area: c3;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-auto-rows: auto-fit;
+        grid-gap: 10px;
+        grid-template-areas: 
+            "avatar"
+            "header"
+            "nav"
+            "mywork"
+            "aboutme"
+            "contact"
+            "footer";
+        /* background-color: gray;   */
     }
     
-    #card4 {
-        grid-area: c4;
+    .container .avatar {
+        grid-area: avatar;
     }
     
-    .cards img, .cards #card1 img {
-        width: 150px;
-        height: 150px;
-        border-radius: 25px;
+    .container header {
+        grid-area: header;
     }
-  }
+    
+    .container nav {
+        grid-area: nav;
+    }
+    
+    .container #mywork {
+        grid-area: mywork;
+    }
+    
+    .container #aboutme {
+        grid-area: aboutme;
+    }
+    
+    .container #contact {
+        grid-area: contact;
+    }
+    
+    .container footer {
+        grid-area: footer;
+    }
+    
+
+    #primary {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 50%;
+    }   
+    
+    #secondary {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .background-img-bigger {
+        /* background-image: url("./images/Blue\ background\ image.jpg"); */
+        background-color: #EEEEEE;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 90vw;
+        background-size: cover; 
+        border-radius: 20px;
+    }
+    
+    .background-img {
+        /* background-image: url("./images/Blue\ background\ image.jpg"); */
+        background-color: #EEEEEE;
+        height: fit-content;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 90vw;
+        background-size: cover; 
+        border-radius: 20px;
+    }
+
+    figcaption {
+        margin: 0 30px;
+    }
+}
+

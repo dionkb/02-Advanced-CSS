@@ -1,6 +1,6 @@
 # Dion Baskara - Portfolio
 
-This project was completed in order to both learn and utilize the techniques I have been learning. This page will also someday function as a true web
+This project was completed in order to both learn more about and to utilize the techniques I have been learning. This page will also someday function as a true web
 development portfolio as I begin to populate it with more deployed apps.
 
 ## Description

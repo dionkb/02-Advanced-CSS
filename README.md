@@ -40,7 +40,7 @@ See the LICENSE.md file for details
 ## Acknowledgments
 
 For providing templates and insights into code:    
-*https://www.w3schools.com
+*https://www.w3schools.com  
 *https://www.freecodecamp.org  
 
 For providing a beautiful color pallete:  
